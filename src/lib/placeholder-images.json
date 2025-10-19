@@ -1,0 +1,46 @@
+{
+  "placeholderImages": [
+    {
+      "id": "ilorin-mosque",
+      "description": "A grand mosque with large domes and minarets.",
+      "imageUrl": "https://images.unsplash.com/photo-1554110838-816383ce7956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncmFuZCUyMG1vc3F1ZXxlbnwwfHx8fDE3NjA4ODE5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grand mosque"
+    },
+    {
+      "id": "dada-pottery",
+      "description": "A woman shaping clay on a potter's wheel.",
+      "imageUrl": "https://images.unsplash.com/photo-1710835037843-0d2dacc177f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG90dGVyeSUyMG1ha2luZ3xlbnwwfHx8fDE3NjA4ODE5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pottery making"
+    },
+    {
+      "id": "unilorin-dam",
+      "description": "A vast body of water with a dam structure and lush green surroundings.",
+      "imageUrl": "https://images.unsplash.com/photo-1701340809575-82d013a7fd2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXRlciUyMGRhbXxlbnwwfHx8fDE3NjA4ODE5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water dam"
+    },
+    {
+      "id": "emir-palace",
+      "description": "A traditional Nigerian palace with intricate carvings and a large gate.",
+      "imageUrl": "https://images.unsplash.com/photo-1712617151110-5362497b8475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJhZGl0aW9uYWwlMjBwYWxhY2V8ZW58MHx8fHwxNzYwODgxOTgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "traditional palace"
+    },
+    {
+      "id": "restaurant-local",
+      "description": "A vibrant plate of Nigerian jollof rice and chicken.",
+      "imageUrl": "https://images.unsplash.com/photo-1664992960082-0ea299a9c53e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqb2xsb2YlMjByaWNlfGVufDB8fHx8MTc2MDc4NjMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jollof rice"
+    },
+    {
+      "id": "hotel-modern",
+      "description": "The modern exterior of a multi-story hotel with glass windows.",
+      "imageUrl": "https://images.unsplash.com/photo-1760386129086-c55af2171f9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBob3RlbHxlbnwwfHx8fDE3NjA4NjA3OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern hotel"
+    },
+    {
+      "id": "hero-image",
+      "description": "An aerial view of a bustling city in Nigeria with unique architecture.",
+      "imageUrl": "https://images.unsplash.com/photo-1524808006522-6d52651b9b52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaXR5JTIwYWVyaWFsfGVufDB8fHx8MTc2MDg2MzYzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city aerial"
+    }
+  ]
+}
