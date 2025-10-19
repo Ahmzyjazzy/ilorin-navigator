@@ -1,7 +1,15 @@
 'use server';
 
-import { optimizeNavigationRoute, OptimizeNavigationRouteInput, OptimizeNavigationRouteOutput } from "@/ai/flows/optimize-navigation-route";
-import { recommendPointsOfInterest, RecommendPointsOfInterestInput, RecommendPointsOfInterestOutput } from "@/ai/flows/recommend-points-of-interest";
+import {
+  optimizeNavigationRoute,
+  OptimizeNavigationRouteInput,
+  OptimizeNavigationRouteOutput,
+} from "@/ai/flows/optimize-navigation-route";
+import {
+  recommendPointsOfInterest,
+  RecommendPointsOfInterestInput,
+  RecommendPointsOfInterestOutput,
+} from "@/ai/flows/recommend-points-of-interest";
 import { z } from "zod";
 
 const navigationSchema = z.object({
@@ -16,19 +24,31 @@ type NavigationState = {
     destination?: string[] | undefined;
   } | null;
   data: OptimizeNavigationRouteOutput | null;
+  formData: { currentLocation: string; destination: string; };
 }
 
 export async function getDirections(prevState: NavigationState, formData: FormData): Promise<NavigationState> {
-  const validatedFields = navigationSchema.safeParse({
+  const formValues = {
     currentLocation: formData.get('currentLocation'),
     destination: formData.get('destination'),
+  };
+  
+  const validatedFields = navigationSchema.safeParse({
+    currentLocation: formValues.currentLocation,
+    destination: formValues.destination,
   });
+
+  const newFormData = {
+    currentLocation: formValues.currentLocation as string,
+    destination: formValues.destination as string,
+  };
 
   if (!validatedFields.success) {
     return {
       message: "Validation failed.",
       errors: validatedFields.error.flatten().fieldErrors,
       data: null,
+      formData: newFormData,
     };
   }
   
@@ -39,9 +59,19 @@ export async function getDirections(prevState: NavigationState, formData: FormDa
       userPreferences: 'fastest route, avoid tolls',
     };
     const result = await optimizeNavigationRoute(input);
-    return { message: "Success", data: result, errors: null };
+    return {
+      message: "Success",
+      data: result,
+      errors: null,
+      formData: newFormData,
+    };
   } catch (error) {
-    return { message: "AI generation failed. Please try again.", data: null, errors: null };
+    return {
+      message: "AI generation failed. Please try again.",
+      data: null,
+      errors: null,
+      formData: newFormData,
+    };
   }
 }
 
