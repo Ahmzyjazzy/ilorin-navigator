@@ -139,6 +139,6 @@ See `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` for contribution guidelines and c
 
 ## License
 
-This project does not include a license file. Add `LICENSE` to indicate how you want to permit reuse.
+This project is released under the MIT License — see the `LICENSE` file for details.
 
 
